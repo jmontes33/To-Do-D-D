@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(26, 26, 26);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'Outfit', sans-serif;
+}
+
+#main-container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    background-color: rgb(17, 17, 17);
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+h1 {
+    color: rgb(51, 54, 57);
+    font-size: 5vw;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#input-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+}
+
+#inputArea {
+    height: 30px;
+    width: 50%;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+
+#addBtn {
+    width: 5vw;
+    background-color: rgb(51, 54, 57);
+    color: white;
+    font-size: 1vw;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+#addBtn:hover {
+    background-color: rgb(255, 60, 0);
+}
+
+#states-container {
+    display: flex;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+#states-container h1 {
+    font-size: 2vw;
+    text-align: center;
+    color: rgb(33, 35, 37);
+}
+
+#states-container div {
+    width: 20vw;
+    height: 50vh;
+    background-color: rgb(73, 76, 80);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.delete {
+    display: none;
+}
+
+.done {
+    background-color: rgb(47, 255, 92); 
+}
+
+.done:hover {
+    background-color: rgb(45, 170, 72); 
+}
+
+ul {
+    padding: 5px
+}
+
+li {
+    background-color: white;
+    padding: 10px;
+    list-style: none;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    width: 90%;
+}
+
+li button {
+    border: none;
+    background-color: rgb(255, 133, 133);
+    transition: 0.3s;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+}
+
+li button:hover {
+    background-color: rgb(255, 55, 55);
+}

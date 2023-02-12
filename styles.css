@@ -132,3 +132,51 @@ li button {
 li button:hover {
     background-color: rgb(255, 55, 55);
 }
+
+
+@media all and (max-width: 760px) {
+    #states-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    #input-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #states-container div {
+        width: 250px;
+        height: 200px;
+    }
+
+    #states-container h1 {
+        font-size: 30px;
+    }
+
+    #addBtn {
+        width: 120px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    #inputArea {
+        width: 80%;
+    }
+
+    #addBtn:hover {
+        background-color: rgb(51, 54, 57);
+    }
+    
+    #in-proccess {
+        display: hidden;
+    }
+
+    #finished {
+        display: none;
+    }
+}
